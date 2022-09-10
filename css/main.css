@@ -1,0 +1,183 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #42EB07;
+	--text: #fff;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: source-code, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/SourceCodePro-Regular.otf.woff2") format("woff2"); font-family: "source-code"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/SourceCodePro-Medium.otf.woff2") format("woff2"); font-family: "source-code"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/SourceCodePro-Light.otf.woff2") format("woff2"); font-family: "source-code"; font-weight: 300; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/Mplus1pbold.woff2") format("woff2"); font-family: "mplus"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* USER STYLES */
+
+.image {
+	max-width: 100%;
+	margin-bottom: var(--bs-gutter-x);
+	border-radius: 4px;
+}
+
+.accent {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+.fullpage {
+  height: 100%;
+}
+
+.fp-overflow {
+  height: 100%;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between; 
+  align-items: stretch; 
+  flex-direction: column; 
+  flex-wrap: nowrap; 
+  align-content: flex-start;
+  height: 100%;
+}
+
+
+.fp-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.section {
+  padding: 1.222%;
+}
+
+.main {
+  background: linear-gradient(126.27deg, rgba(123, 89, 23, 0.2) 2.63%, rgba(148, 117, 18, 0.175) 9.1%, rgba(156, 122, 35, 0) 32.94%), #161616;
+  background-size: inherit;
+  background-position: center left;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.projects {
+  background: #161616;
+}
+
+.table-tab a{
+  font-size: 1rem;
+}
+
+.table-tab ul {
+  display: flex;
+  gap: 2em;
+  padding: 0;
+}
+
+td {
+  padding: 10px 30px;
+  border: 1px dashed;
+}
+
+th {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px dashed;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+
+h1 {
+  font-family: mplus, sans-serif;
+  font-weight: 700;
+  font-size: 7.5em;
+  line-height: 0.9;
+  overflow: hidden;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.console-btn {
+  text-align: right;
+}
+
+.nav {
+  padding-left: 14rem;
+}
+
+.console-btn a {
+  color: var(--accent);
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6em;
+  line-height: 2.6;
+  padding: 0;
+}
+
+ul li a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #ababab;
+}
+
+.contact-ico {
+  display: flex;
+  justify-content: flex-start; 
+  font-size: 1em;
+  gap: 2em;
+  float: right;
+}
