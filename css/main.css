@@ -181,3 +181,28 @@ h3 {
   gap: 2em;
   float: right;
 }
+
+/* TABLE PROJECTS */
+
+.table-projects-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-projects-pagination {
+  margin-top: auto;
+}
+
+.btn-filter-active {
+  color: green;
+}
+
+.btn-pagination-nav-disabled {
+  color: #aaa;
+  opacity: .3;
+  cursor: default;
+}
+
+.btn-pagination-nav-disabled:hover {
+  color: #aaa;
+}

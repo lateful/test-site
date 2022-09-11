@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="section projects">
+    <div class="section projects" data-section-projects>
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
@@ -69,15 +69,16 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 table-projects-wrapper" data-table-projects-wrapper>
             <div class="table-tab">
               <ul>
-                <li><a href="#">[all]</a></li>
-                <li><a href="#">[done]</a></li>
-                <li><a href="#">[at work]</a></li>
+                <!-- To set default filter need add attribute 'data-table-default-filter' to 'a' tag, if not add attribute first filter is apply -->
+                <li><a href="#" data-table-btn-filter>[all]</a></li>
+                <li><a href="#" data-table-btn-filter="done">[done]</a></li>
+                <li><a href="#" data-table-btn-filter="at-work">[at work]</a></li>
               </ul>
             </div>
-            <table>
+            <table data-table-projects>
               <thead>
                 <tr>
                   <th>Project</th>
@@ -88,210 +89,210 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Testnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="done">
+                <tr data-table-filter="done">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
                   <td>Mainnet</td>
                   <td>Online</td>
                 </tr>
-                <tr class="at_work">
+                <tr data-table-filter="at-work">
                   <td>Solana</td>
                   <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores rerum explicabo aspernatur placeat!</td>
                   <td>APY 20%</td>
@@ -300,9 +301,13 @@
                 </tr>
               </tbody>
             </table>
-            <a href="#">prew projects</a>
-            <span>> 2 <</span>
-            <a href="#">next projects</a>
+            <div class="table-projects-pagination">
+              <a href="#" data-table-btn-prev-page>prew projects</a>
+              <span>
+                <span data-table-projects-current-page>1</span>/<span data-table-projects-total-page></span>
+              </span>
+              <a href="#" data-table-btn-next-page>next projects</a>
+            </div>
           </div>
         </div>
       </div>
